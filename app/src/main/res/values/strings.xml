@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bluered</string>
+    <string name="left_button_text">Left</string>
+    <string name="right_button_text">Right</string>
+    <string name="main_text">Choose one:</string>
+    <string name="right_text">You swapped right</string>
+    <string name="left_text">You swapped left</string>
+</resources>
