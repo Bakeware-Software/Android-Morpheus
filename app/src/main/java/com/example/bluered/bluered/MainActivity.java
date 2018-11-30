@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.example.bluered.bluered.db.FeedContract;
+import com.example.bluered.bluered.db.FeedReaderDbHelper;
+
 public class MainActivity extends AppCompatActivity {
 
     private float x1, x2;
     static final int MIN_DISTANCE = 150;
-
+    FeedReaderDbHelper mDbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

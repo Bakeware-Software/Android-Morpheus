@@ -16,27 +16,9 @@ public final class FeedContract  {
         public static final String COLUMN_SAYING = "saying";
     }
     // SQLite create table string command
-    private static final String SQL_CREATE_TABLE =
+    static final String SQL_CREATE_TABLE =
             "CREATE TABLE " + FeedEntry.TABLE_NAME + " ("
             + FeedEntry.ID + "INTEGER PRIMARY KEY,"
             + FeedEntry.COLUMN_COLOR + " TEXT NOT NULL,"
             + FeedEntry.COLUMN_SAYING + " TEXT)";
-
-    
-    public class FeedReaderDbHelper extends SQLiteOpenHelper {
-        public static final String DATABASE_NAME = "FeedReader.db";
-
-        public FeedReaderDbHelper(Context context) {
-            super(context, DATABASE_NAME, null, 1);
-        }
-        @Override
-        public void onCreate(SQLiteDatabase db) {
-            db.execSQL(SQL_CREATE_TABLE);
-        }
-
-        @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-            //todo
-        }
-    }
 }
